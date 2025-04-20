@@ -1,5 +1,25 @@
 import React from 'react';
-
+import react from "../assets/react.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import JavaScript from "../assets/JavaScript.png";
+import tailwind from "../assets/tailwind.webp";
+import nodejs from "../assets/nodejs.png";
+import mysql from "../assets/mysql.png";
+import express from "../assets/express.png";
+import mongodb from "../assets/mongodb.webp";
+import python from "../assets/python.png";
+import pandas from "../assets/pandas.png";
+import numpy from "../assets/numpy.png";
+import matplot from "../assets/matplot.png";
+import sklearn from "../assets/sklearn.png";
+import tensorflow from "../assets/tensorflow.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import java from "../assets/java.jpg";
+import postman from "../assets/postman.jpg";
+import vscode from "../assets/vscode.png";
+import android from "../assets/android.webp";
 
 const skillCategories = [
     {
@@ -11,22 +31,22 @@ const skillCategories = [
             "JavaScript",
             "TailwindCSS"
         ],
-        logos: ["react.png", "html.png", "css.png", "JavaScript.png", "tailwind.webp"]
+        logos: [react, html, css, JavaScript, tailwind]
     },
     {
         title: "Backend",
         skills: ["Node.js", "MySQL","Express.js", "MongoDB"],
-        logos: ["nodejs.png", "mysql.png", "express.png", "mongodb.webp"]
+        logos: [nodejs, mysql, express, mongodb]
     },
     {
         title: "Machine Learning",
         skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "TensorFlow"],
-        logos: ["python.png", "pandas.png", "numpy.png","matplot.png", "sklearn.png", "tensorflow.png"]
+        logos: [python, pandas, numpy,matplot, sklearn, tensorflow]
     },
     {
         title: "Others",
         skills: ["Git", "GitHub","Java", "Postman", "VS Code","Android Studio"],
-        logos: ["git.png", "github.png","java.jpg", "postman.jpg", "vscode.png","android.webp"]
+        logos: [git, github,java, postman, vscode,android]
     },
 ];
 
@@ -52,7 +72,7 @@ const SkillsSection = () => {
                                     <div
                                         key={skillIndex}
                                         className="px-2 md:px-4 py-2 md:py-3 rounded-[5px] text-[15px] md:text-[20px] text-gray-300 bg-[#2b2b3c] border border-blue-500 flex items-center justify-center gap-[8px]"
-                                    ><img src={`./src/assets/${category.logos[skillIndex]}`} alt={skill} className='w-[30px] h-[30px]' />
+                                    ><img src={category.logos[skillIndex]} alt={skill} className='w-[30px] h-[30px]' />
                                         {skill}
                                     </div>
                                 ))}

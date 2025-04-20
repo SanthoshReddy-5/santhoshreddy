@@ -1,9 +1,17 @@
+import React from "react";
+import github from "../assets/github.png";
+import background from "../assets/background.png";
+import blinkit from "../assets/blinkit.png";
+import password from "../assets/password.png";
+import weather from "../assets/weather.png";
+import potato from "../assets/potato.png";
+
 const projects = [
     {
         title: "Background Generator",
         description:
             "A gradient background generator creates smooth color transitions for backgrounds.",
-        image: "background.png",
+        image: background,
         tags: ["Javascript", "HTML", "CSS"],
         sourceCode: "https://github.com/SanthoshReddy-5",
     },
@@ -11,7 +19,7 @@ const projects = [
         title: "BlinkIt Clone",
         description:
             "This project is a only frontend clone of Blinkit, a popular grocery delivery platform, created using HTML and CSS. It focuses on replicating the visual design, layout, and responsiveness of the Blinkit website.",
-        image: "blinkit.png",
+        image: blinkit,
         tags: ["HTML","CSS","JavaScript"],
         sourceCode: "https://github.com/SanthoshReddy-5/BlinkitFrontendClone",
     },
@@ -19,7 +27,7 @@ const projects = [
         title: "Password Manager",
         description:
             "This project is a simple and secure password manager web application designed to store and manage credentials efficiently",
-        image: "password.png",
+        image: password,
         tags: ["React.js", "Node.js", "Express", "MySQL"],
         sourceCode: "https://github.com/SanthoshReddy-5",
     },
@@ -27,7 +35,7 @@ const projects = [
         title: "Weather Application",
         description:
             "This project is a user-friendly web app that provides real-time weather information for any city. It fetches data using the OpenWeather API and displays current weather details like temperature, humidity, and weather conditions.",
-        image: "weather.png",
+        image: weather,
         tags: ["HTML", "CSS", "JavaScript"],
         sourceCode: "https://github.com/SanthoshReddy-5/WeatherApplication",
     },
@@ -35,7 +43,7 @@ const projects = [
         title: "Potato Leaf Disease Recognition",
         description:
             "This project aims to detect and classify potato leaf diseases using deep learning. The system processes images of potato leaves, applies a Convolutional Neural Network (CNN) model, and predicts the disease category. The model is integrated with a Flask web application for easy user interaction.",
-        image: "potato.png",
+        image: potato,
         tags: ["Pyhton", "Flask", "HTML", "CSS","JavaScript"],
         sourceCode: " https://github.com/SanthoshReddy-5/PotatoLeafDiseaseRecognition",
     }
@@ -55,7 +63,7 @@ const ProjectShowcase = () => {
                             className="bg-[#1f1f2e] text-white p-4 rounded-[10px] shadow-md flex flex-col border-2 border-blue-500 scrolls"
                         >
                             <img
-                                src={`./src/assets/${project.image}`}
+                                src={project.image}
                                 alt={project.title}
                                 className="rounded-[5px] w-full h-48 object-cover border-2 border-blue-500"
                             />
@@ -78,7 +86,7 @@ const ProjectShowcase = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="mt-4 text-center text-[18px] text-black bg-white px-4 py-2 rounded-[5px] flex items-center justify-center gap-[5px] border-2 border-blue-500"
-                            > <img src="./src/assets/github.png" alt="GitHub logo" className="w-[30px] h-[30px]"/>
+                            > <img src={github} alt="GitHub logo" className="w-[30px] h-[30px]"/>
                                 View On GitHub
                             </a>
                         </div>

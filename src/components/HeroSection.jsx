@@ -1,6 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from "react-type-animation";
-import { Mail,FileText } from "lucide-react"
+import { Mail,FileText } from "lucide-react";
+import heroSectionImg from "../assets/heroSectionImg.jpg";
 
 const roles = [
   "Machine Learning Engineer", 1000,
@@ -31,7 +32,7 @@ const HeroSection = () => {
 
         <div className="md:w-1/2 mx-[50px] mt-[50px] mb-[30px] md:m-0  md:order-2 order-1 flex items-center justify-center">
           <div className='md:h-[400px] md:w-[400px] md:m-auto'>
-            <img src="./src/assets/heroSectionImg.jpg" alt="Developer photo" className='object-cover curves border-2 border-blue-500' />
+            <img src={heroSectionImg} alt="Developer photo" className='object-cover curves border-2 border-blue-500' />
           </div>
         </div>
 

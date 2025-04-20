@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';//Icons
+import logo from "../assets/logo.jpg";
+import github from "../assets/github.png";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +12,7 @@ const Navbar = () => {
         <div className='bg-white w-full h-[80px] shadow-md sticky top-0 left-0 z-10'>
             <div className="max-w-[1280px] px-[15px] h-full m-auto flex items-center justify-between">
                 <div className="h-[60px] w-fit flex items-center justify-between mr-[50px]">
-                    <img src="./src/assets/logo.jpg" alt="Developer Logo" className='w-[60px] h-[60px] rounded-full border-2 border-blue-500' />
+                    <img src={logo} alt="Developer Logo" className='w-[60px] h-[60px] rounded-full border-2 border-blue-500' />
                     <div className="text-purple-500 ml-[10px] md:text-[22px] text-[18px] font-bold">Santhosh Reddy</div>
                 </div>
 
@@ -24,7 +26,7 @@ const Navbar = () => {
                     </div>
                     <div className='px-[10px] py-[5px] rounded-full border-2 border-blue-500 hover:bg-gradient-to-r from-purple-500 to-blue-500 transition duration-300'>
                         <a href="https://github.com/SanthoshReddy-5" className='px-[5px] flex items-center justify-between font-medium text-[18px] hover:text-white'>
-                            <img src="./src/assets/github.png" alt="Github logo" className='w-[40px] h-[40px]' />GitHub</a>
+                            <img src={github} alt="Github logo" className='w-[40px] h-[40px]' />GitHub</a>
                     </div>
                 </div>
 
@@ -42,9 +44,9 @@ const Navbar = () => {
                         <a href="#projects" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]">PROJECTS</a>
                         <a href="#education" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]">EDUCATION</a>
                         <div className='w-full border-2 border-blue-500 rounded-[5px]'>
-                        <a href="https://github.com" className='flex bg-gradient-to-r from-purple-500 to-blue-500 py-[6px] text-white text-[18px] items-center justify-center gap-[5px]'><img src="./src/assets/github.png" alt="Github logo" className='w-[30px] h-[30px]' />GitHub</a>
+                            <a href="https://github.com" className='flex bg-gradient-to-r from-purple-500 to-blue-500 py-[6px] text-white text-[18px] items-center justify-center gap-[5px]'><img src={github} alt="Github logo" className='w-[30px] h-[30px]' />GitHub</a>
                         </div>
-                        
+
                     </div>
                 )}
             </div>

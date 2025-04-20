@@ -1,6 +1,10 @@
 import React,{useRef,useState,useEffect} from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
+import instagram from "../assets/instagram.png";
+
 
 const Contact = () => {
 
@@ -67,13 +71,13 @@ const Contact = () => {
             <div className='text-white text-[20px] md:text-[25px]'>Also follow on</div>
             <div className='flex items-center justify-center flex-col gap-[15px]'>
               <a href="https://www.linkedin.com/in/santhosh-reddy-6a977a2ba" className="text-[16px] md:text-[20px] bg-[#2b2b3c] flex items-center gap-2 text-white border-2 px-4 py-2 rounded-full border-blue-500">
-                <img src="./src/assets/linkedin.png" alt="LinkedIn Logo" className='w-[40px] h-[40px]' />LinkedIn
+                <img src={linkedin} alt="LinkedIn Logo" className='w-[40px] h-[40px]' />LinkedIn
               </a>
               <a href="https://github.com/SanthoshReddy-5" className="text-[16px] md:text-[20px] flex items-center gap-2 bg-white text-black border-2 px-4 py-2 rounded-full border-blue-500">
-                <img src="./src/assets/github.png" alt="GitHub Logo" className='w-[40px] h-[40px]' />GitHub
+                <img src={github} alt="GitHub Logo" className='w-[40px] h-[40px]' />GitHub
               </a>
               <a href="https://instagram.com/santhosh__reddy__5" className="text-[16px] md:text-[20px] bg-[#2b2b3c] flex items-center gap-2 text-white border-2 px-4 py-2 rounded-full border-blue-500">
-                <img src="./src/assets/instagram.png" alt="Instagram Logo" className='w-[40px] h-[40px]' />Instagram
+                <img src={instagram} alt="Instagram Logo" className='w-[40px] h-[40px]' />Instagram
               </a>
             </div>
             <div className='text-white text-center md:text-[14px] text-[12px]'>&copy; 2025 Santhosh Reddy. All rights reserved.</div>
