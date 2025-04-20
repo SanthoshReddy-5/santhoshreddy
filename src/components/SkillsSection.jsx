@@ -2,7 +2,7 @@ import React from 'react';
 import react from "../assets/react.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
-import JavaScript from "../assets/JavaScript.png";
+import javascript from "../assets/javascript.png";
 import tailwind from "../assets/tailwind.webp";
 import nodejs from "../assets/nodejs.png";
 import mysql from "../assets/mysql.png";
@@ -31,7 +31,7 @@ const skillCategories = [
             "JavaScript",
             "TailwindCSS"
         ],
-        logos: [react, html, css, JavaScript, tailwind]
+        logos: [react, html, css, javascript, tailwind]
     },
     {
         title: "Backend",
@@ -41,12 +41,12 @@ const skillCategories = [
     {
         title: "Machine Learning",
         skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "TensorFlow"],
-        logos: [python, pandas, numpy,matplot, sklearn, tensorflow]
+        logos: [python, pandas, numpy, matplot, sklearn, tensorflow]
     },
     {
         title: "Others",
         skills: ["Git", "GitHub","Java", "Postman", "VS Code","Android Studio"],
-        logos: [git, github,java, postman, vscode,android]
+        logos: [git, github, java, postman, vscode, android]
     },
 ];
 
