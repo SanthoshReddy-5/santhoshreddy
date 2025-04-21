@@ -24,7 +24,7 @@ const HeroSection = () => {
             className="text-blue-500 text-[20px] md:text-[25px]"/>
           </div>
           <div className="text-[20px] md:text-[25px] text-center md:text-left">I am a motivated and always eager to take up new challenges who loves solving problems and building useful solutions. I enjoy learning new things and always strive to do my best work.</div>
-          <div className='flex items-center justify-between gap-[5px] md:gap-[30px] my-[20px] md:mx-auto'>
+          <div className='flex items-center justify-between gap-[10px] md:gap-[30px] my-[20px] md:mx-auto'>
             <a href="#contact" className='px-[5px] py-[6px] md:px-[10px] md:py-[10px] border-2 border-blue-500 rounded-full text-purple-500 text-[15px] md:text-[20px] flex items-center justify-center gap-[5px]'>Contact Me <Mail size={20} /></a>
             <a href="https://docs.google.com/document/d/1M1b5SYJf9kPh9qJ7sz47OCoWPv2T3hsB/edit?usp=drivesdk&ouid=111229556915558980858&rtpof=true&sd=true" className='px-[5px] py-[6px] md:px-[10px] md:py-[10px] bg-gradient-to-r from-purple-500 to-blue-500 border-2 border-blue-500 text-[15px] md:text-[20px] rounded-full flex items-center justify-center gap-[5px] text-white'>Check Resume <FileText size={20} /></a>
           </div>
