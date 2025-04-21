@@ -7,6 +7,9 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    const handleLinkClick = () => {
+        setIsOpen(false); // Close menu on link click
+    };
 
     return (
         <div className='bg-white w-full h-[80px] shadow-md sticky top-0 left-0 z-10'>
@@ -39,10 +42,10 @@ const Navbar = () => {
 
                 {isOpen && (
                     <div className="md:hidden bg-[#1f1f2e] w-[50%] px-[10px] py-[10px] flex items-center justify-between flex-col gap-[10px] absolute top-[85px] right-[5px] border-2 border-blue-500 rounded-[5px]">
-                        <a href="#about" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]">ABOUT</a>
-                        <a href="#skills" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]">SKILLS</a>
-                        <a href="#projects" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]">PROJECTS</a>
-                        <a href="#education" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]">EDUCATION</a>
+                        <a href="#about" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]"  onClick={handleLinkClick}>ABOUT</a>
+                        <a href="#skills" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]"  onClick={handleLinkClick}>SKILLS</a>
+                        <a href="#projects" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]" onClick={handleLinkClick}>PROJECTS</a>
+                        <a href="#education" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-gray-300 border-2 border-blue-500 rounded-[5px]"  onClick={handleLinkClick}>EDUCATION</a>
                         <div className='w-full border-2 border-blue-500 rounded-[5px]'>
                             <a href="https://github.com" className='flex bg-gradient-to-r from-purple-500 to-blue-500 py-[6px] text-white text-[18px] items-center justify-center gap-[5px]'><img src={github} alt="Github logo" className='w-[30px] h-[30px]' />GitHub</a>
                         </div>

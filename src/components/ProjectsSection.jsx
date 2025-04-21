@@ -12,7 +12,7 @@ const projects = [
         description:
             "A gradient background generator creates smooth color transitions for backgrounds.",
         image: background,
-        tags: ["Javascript", "HTML", "CSS"],
+        tags: ["HTML", "CSS", "Javascript"],
         sourceCode: "https://github.com/SanthoshReddy-5",
     },
     {
@@ -20,7 +20,7 @@ const projects = [
         description:
             "This project is a only frontend clone of Blinkit, a popular grocery delivery platform, created using HTML and CSS. It focuses on replicating the visual design, layout, and responsiveness of the Blinkit website.",
         image: blinkit,
-        tags: ["HTML","CSS","JavaScript"],
+        tags: ["HTML","CSS"],
         sourceCode: "https://github.com/SanthoshReddy-5/BlinkitFrontendClone",
     },
     {
@@ -28,7 +28,7 @@ const projects = [
         description:
             "This project is a simple and secure password manager web application designed to store and manage credentials efficiently",
         image: password,
-        tags: ["React.js", "Node.js", "Express", "MySQL"],
+        tags: ["React.js", "Node.js", "Express.js", "MySQL"],
         sourceCode: "https://github.com/SanthoshReddy-5",
     },
     {
@@ -36,7 +36,7 @@ const projects = [
         description:
             "This project is a user-friendly web app that provides real-time weather information for any city. It fetches data using the OpenWeather API and displays current weather details like temperature, humidity, and weather conditions.",
         image: weather,
-        tags: ["HTML", "CSS", "JavaScript"],
+        tags: ["HTML", "CSS", "JavaScript", "openWeatherMapAPI"],
         sourceCode: "https://github.com/SanthoshReddy-5/WeatherApplication",
     },
     {
@@ -54,7 +54,7 @@ const ProjectShowcase = () => {
         <div id="projects" className="w-full bg-gradient-to-br from-orange-100 via-white to-green-100">
             <div className="max-w-[1280px] m-auto py-[20px]">
                 <div className="text-[30px] md:text-[35px] font-medium pt-[20px] text-center text-purple-500">Projects</div>
-                <div className="text-center text-[20px]">Here are some of my projects built using web technologies and machine learning tools.</div>
+                <div className="text-center text-[20px] px-[20px]">Here are some of my projects built using web technologies and machine learning tools.</div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                     {projects.map((project, index) => (

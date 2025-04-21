@@ -35,7 +35,7 @@ const skillCategories = [
     },
     {
         title: "Backend",
-        skills: ["Node.js", "MySQL","Express.js", "MongoDB"],
+        skills: ["Node Js", "MySQL","Express Js", "MongoDB"],
         logos: [nodejs, mysql, express, mongodb]
     },
     {
@@ -56,7 +56,7 @@ const SkillsSection = () => {
         <div id='skills' className='bg-gradient-to-br from-blue-100 via-white to-orange-100 w-full'>
             <div className='max-w-[1280px] m-auto'>
                 <div className="text-center md:text-[35px] text-[30px] pt-[15px] text-purple-500 font-medium">Skills</div>
-                <div className='text-[18px] md:text-[25px] text-center mx-[15px]'>
+                <div className='text-[18px] md:text-[25px] text-center px-[20px]'>
                     These skills represent my ability to build efficient, scalable and modern applications across different domains.
                 </div>
 
