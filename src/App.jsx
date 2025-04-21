@@ -9,7 +9,7 @@ import SkillsSection from './components/SkillsSection';
 function App() {
 
   return (
-    <div className='poppins'>
+    <div>
       <Navbar/>
       <HeroSection/>
       <SkillsSection/>
