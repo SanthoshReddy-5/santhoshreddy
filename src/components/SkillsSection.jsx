@@ -2,7 +2,7 @@ import React from 'react';
 import react from "../assets/react.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
+import javaScript from "../assets/javascript.png";
 import tailwind from "../assets/tailwind.webp";
 import nodejs from "../assets/nodejs.png";
 import mysql from "../assets/mysql.png";
@@ -31,7 +31,7 @@ const skillCategories = [
             "JavaScript",
             "TailwindCSS"
         ],
-        logos: [react, html, css, javascript, tailwind]
+        logos: [react, html, css, javaScript, tailwind]
     },
     {
         title: "Backend",
