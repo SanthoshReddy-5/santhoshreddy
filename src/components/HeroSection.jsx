@@ -1,7 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from "react-type-animation";
 import { Mail,FileText } from "lucide-react";
-import heroSectionImg from "../assets/heroSectionImg.jpg";
+import heroSectionImg from "../assets/heroSectionImg.webp";
 
 const roles = [
   "Machine Learning Engineer", 1000,
