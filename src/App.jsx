@@ -1,10 +1,10 @@
-import './App.css';
 import Contact from './components/Contact';
-import EducationDetails from './components/EducationDetails';
+import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
+import EducationDetails from './components/EducationDetails';
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
       <ProjectsSection/>
       <EducationDetails/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

@@ -12,7 +12,7 @@ const projects = [
         description:
             "A gradient background generator creates smooth color transitions for backgrounds.",
         image: background,
-        tags: ["HTML", "CSS", "Javascript"],
+        tags: ["HTML", "CSS", "JavaScript"],
         sourceCode: "https://github.com/SanthoshReddy-5",
     },
     {
@@ -40,11 +40,11 @@ const projects = [
         sourceCode: "https://github.com/SanthoshReddy-5/WeatherApplication",
     },
     {
-        title: "Potato Leaf Disease Recognition",
+        title: "Potato Leaf Disease Classification",
         description:
-            "This project aims to detect and classify potato leaf diseases using deep learning. The system processes images of potato leaves, applies a Convolutional Neural Network (CNN) model, and predicts the disease category. The model is integrated with a Flask web application for easy user interaction.",
+            "This project aims to classify potato leaf diseases using deep learning. The system processes images of potato leaves, applies a Convolutional Neural Network (CNN) model and predicts the disease category. The model is integrated with a Flask web application for easy user interaction.",
         image: potato,
-        tags: ["Pyhton", "Flask", "HTML", "CSS","JavaScript"],
+        tags: ["Python", "Flask", "HTML", "CSS","JavaScript"],
         sourceCode: " https://github.com/SanthoshReddy-5/PotatoLeafDiseaseRecognition",
     }
 ];
@@ -53,8 +53,8 @@ const ProjectShowcase = () => {
     return (
         <div id="projects" className="w-full bg-gradient-to-br from-orange-100 via-white to-green-100">
             <div className="max-w-[1280px] m-auto py-[20px]">
-                <div className="text-[30px] md:text-[35px] font-medium pt-[20px] text-center text-purple-500">Projects</div>
-                <div className="text-center text-[20px] px-[20px]">Here are some of my projects built using web technologies and machine learning tools.</div>
+                <div className="text-[30px] md:text-[40px] font-semibold pt-[20px] text-center text-purple-500">Projects</div>
+                <div className="text-center text-[18px] md:text-[25px] mt-[10px] px-[20px]">Here are some of my projects built using web technologies and machine learning tools.</div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                     {projects.map((project, index) => (
@@ -65,19 +65,19 @@ const ProjectShowcase = () => {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="rounded-[5px] w-full h-48 object-cover border-2 border-blue-500"
+                                className="rounded-[5px] w-full object-cover border-2 border-blue-500"
                             />
                             <div className="flex flex-wrap gap-2 my-3">
                                 {project.tags.map((tag, i) => (
                                     <span
                                         key={i}
-                                        className="px-3 py-1 text-[15px] bg-[#2b2b3c] border-2 border-blue-500 rounded-[5px]"
+                                        className="px-3 py-1 text-[14px] bg-[#2b2b3c] border-2 border-blue-500 rounded-[5px]"
                                     >
                                         {tag}
                                     </span>
                                 ))}
                             </div>
-                            <h3 className="text-[20px] font-bold mb-2">{project.title}</h3>
+                            <h3 className="text-[16px] md:text-[20px] font-bold mb-2">{project.title}</h3>
                             <p className="text-[15px] text-gray-300 line-clamp-3 flex-grow">
                                 {project.description}
                             </p>

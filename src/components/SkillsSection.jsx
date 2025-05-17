@@ -1,4 +1,3 @@
-import React from 'react';
 import react from "../assets/react.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -16,10 +15,12 @@ import sklearn from "../assets/sklearn.png";
 import tensorflow from "../assets/tensorflow.png";
 import git from "../assets/git.png";
 import github from "../assets/github.png";
-import java from "../assets/java.jpg";
-import postman from "../assets/postman.jpg";
+import java from "../assets/java.png";
+import postman from "../assets/postman.png";
 import vscode from "../assets/vscode.png";
 import android from "../assets/android.webp";
+import netlify from "../assets/netlify.png";
+import powerbi from "../assets/powerbi.png";
 
 const skillCategories = [
     {
@@ -31,7 +32,7 @@ const skillCategories = [
             "JavaScript",
             "TailwindCSS"
         ],
-        logos: [react, html, css, js, tailwind]
+        logos: [react, html,css,js, tailwind]
     },
     {
         title: "Backend",
@@ -39,14 +40,14 @@ const skillCategories = [
         logos: [nodejs, mysql, express, mongodb]
     },
     {
-        title: "Machine Learning",
+        title: "AI & ML",
         skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "TensorFlow"],
         logos: [python, pandas, numpy, matplot, sklearn, tensorflow]
     },
     {
         title: "Others",
-        skills: ["Git", "GitHub","Java", "Postman", "VS Code","Android Studio"],
-        logos: [git, github, java, postman, vscode, android]
+        skills: ["Git", "GitHub","Java", "Netlify","Postman", "VS Code","Android Studio","Power BI"],
+        logos: [git, github, java, netlify, postman, vscode, android,powerbi]
     },
 ];
 
@@ -55,7 +56,7 @@ const SkillsSection = () => {
     return (
         <div id='skills' className='bg-gradient-to-br from-blue-100 via-white to-orange-100 w-full'>
             <div className='max-w-[1280px] m-auto'>
-                <div className="text-center md:text-[35px] text-[30px] pt-[15px] text-purple-500 font-medium">Skills</div>
+                <div className="text-center text-[25px] md:text-[40px] pt-[25px] text-purple-500 font-semibold">Skills</div>
                 <div className='text-[18px] md:text-[25px] text-center px-[20px]'>
                     These skills represent my ability to build efficient, scalable and modern applications across different domains.
                 </div>
@@ -64,14 +65,14 @@ const SkillsSection = () => {
                     {skillCategories.map((category, index) => (
                         <div
                             key={index}
-                            className="bg-[#1f1f2e] text-white p-6 rounded-[10px] border border-blue-500 shadow-md scrolls"
+                            className="bg-[#1f1f2e] text-white p-6 rounded-[10px] border-2 border-blue-500 shadow-md scrolls"
                         >
-                            <h3 className="text-[25px] md:text-[20px] font-medium text-gray-200 text-center mb-4">{category.title}</h3>
+                            <h3 className="text-[20px] md:text-[25px] font-medium text-gray-200 text-center mb-4">{category.title}</h3>
                             <div className="flex flex-wrap gap-3 justify-center">
                                 {category.skills.map((skill, skillIndex) => (
                                     <div
                                         key={skillIndex}
-                                        className="px-2 md:px-4 py-2 md:py-3 rounded-[5px] text-[15px] md:text-[20px] text-gray-300 bg-[#2b2b3c] border border-blue-500 flex items-center justify-center gap-[8px]"
+                                        className="px-2 md:px-4 py-2 md:py-3 rounded-[5px] text-[14px] md:text-[18px] bg-[#2b2b3c] text-gray-300 border-blue-500 border flex items-center justify-center gap-[8px]"
                                     ><img src={category.logos[skillIndex]} alt={skill} className='w-[30px] h-[30px]' />
                                         {skill}
                                     </div>
