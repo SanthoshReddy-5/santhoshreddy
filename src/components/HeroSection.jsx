@@ -7,8 +7,7 @@ const roles = [
   "AI/ML Engineer", 1000,
   "Full Stack Web Developer", 1000,
   "Data Scientist", 1000,
-  "Programmer", 1000,
-  "UI/UX Designer",1000
+  "Programmer", 1000
 ];
 
 const HeroSection = () => {
