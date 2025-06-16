@@ -1,5 +1,5 @@
 import React from 'react';
-import swarnandhraLogo from '../assets/image.png';
+import swarnandhraLogo from '../assets/swrn.png';
 import { MdSchool } from "react-icons/md";
 
 const educationData = [
