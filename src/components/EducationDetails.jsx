@@ -1,5 +1,6 @@
 import React from 'react';
 import swarnandhraLogo from '../assets/swrn.png';
+import interLogo from '../assets/inter.jpg';
 import { MdSchool } from "react-icons/md";
 
 const educationData = [
@@ -8,7 +9,7 @@ const educationData = [
     college: 'Swarnandhra College of Engineering and Technology',
     place: 'Narsapur',
     year: '2022 - Present',
-    cgpa: '8.35',
+    cgpa: '8.35 / 10.0',
     logo: swarnandhraLogo,
     desc: "I am currently pursuing B.Tech Final Year in SCET, gained a strong foundation in the core concepts of Computer Science and Engineering, specializied in Data Science, resulting in an impressive CGPA of 8.35. I explored the depths of Artificial Intelligence and Machine Learning, working on hands-on projects that enhanced my problem solving and analytical abilities."
   },
@@ -17,8 +18,8 @@ const educationData = [
     college: 'Andhra Association (UK) Junior College',
     place: 'Penumantra',
     year: '2020 - 2022',
-    marks: '717 / 1000',
-    icon: <MdSchool className="text-purple-500 text-3xl" />,
+    percentage: '72%',
+    logo: interLogo,
     desc: "I completed my Intermediate at Andhra Association (UK) Junior College, Penumantra where I not only focused on academics but also improved my communication skills in English and Hindi. This helped me articulate my thoughts confidently and effectively."
   },
   {
@@ -26,9 +27,9 @@ const educationData = [
     college: 'R.A.Z.P High School',
     place: 'Penumantra',
     year: '2020',
-    marks: '476 / 600',
+    percentage: '79%',
     icon: <MdSchool className="text-purple-500 text-3xl" />,
-    desc: "I completed my SSC at R.A.Z.P High School, Penumantra where I not only gained academic knowledge but also learned lifelong values like discipline, ethics, and friendship that shaped my early growth."
+    desc: "I completed my SSC at R.A.Z.P High School, Penumantra where I not only gained academic knowledge but also learned lifelong values like discipline, ethics and friendship that shaped my early growth."
   },
 ];
 
@@ -46,7 +47,7 @@ const EducationDetails = () => {
               <div className="absolute left-[-35px] w-5 h-5 bg-white rounded-full border-4 border-blue-500"></div>
 
               <div className="bg-[#1f1f2e] text-white p-5 rounded-xl shadow-md border-2 border-blue-500 w-full transition-all duration-300 ease-in-out">
-                <div className="flex items-center gap-4 mb-3 flex-wrap">
+                <div className="flex items-center gap-4 mb-1 flex-wrap">
                   {edu.logo ? (
                     <img
                       src={edu.logo}
@@ -60,7 +61,7 @@ const EducationDetails = () => {
                   )}
                   <div>
                     <h3 className="text-lg md:text-xl font-semibold">{edu.course}</h3>
-                    <p className="text-gray-400 text-sm">
+                    <p className="text-gray-400">
                       <strong className="text-gray-300">{index === 2 ? 'School' : 'College'} :</strong> {edu.college}
                     </p>
                   </div>
@@ -77,9 +78,9 @@ const EducationDetails = () => {
                     <strong className="text-gray-300">CGPA :</strong> {edu.cgpa}
                   </p>
                 )}
-                {edu.marks && (
+                {edu.percentage && (
                   <p className="text-gray-400 font-medium mt-1">
-                    <strong className="text-gray-300">Marks :</strong> {edu.marks}
+                    <strong className="text-gray-300">percentage :</strong> {edu.percentage}
                   </p>
                 )}
                 {edu.desc && (

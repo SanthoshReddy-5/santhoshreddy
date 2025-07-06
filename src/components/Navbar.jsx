@@ -40,12 +40,12 @@ const Navbar = () => {
                 </div>
 
                 {isOpen && (
-                    <div className="md:hidden bg-gradient-to-br from-blue-100 via-white to-pink-100 w-[50%] px-[10px] py-[10px] flex items-center justify-between flex-col gap-[10px] absolute top-[85px] right-[5px] border-2 border-blue-500 rounded-[5px]">
-                        <a href="#about" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-purple-500 border-2 border-blue-500 rounded-[5px]"  onClick={handleLinkClick}>ABOUT</a>
-                        <a href="#skills" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-purple-500 border-2 border-blue-500 rounded-[5px]"  onClick={handleLinkClick}>SKILLS</a>
-                        <a href="#projects" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-purple-500 border-2 border-blue-500 rounded-[5px]" onClick={handleLinkClick}>PROJECTS</a>
-                        <a href="#education" className="block bg-[#2b2b3c] w-full text-[20px] font-medium text-center py-[6px] text-purple-500 border-2 border-blue-500 rounded-[5px]"  onClick={handleLinkClick}>EDUCATION</a>
-                        <div className='w-full border-2 border-blue-500 rounded-[5px]'>
+                    <div className="md:hidden bg-gradient-to-br from-blue-100 via-white to-pink-100 w-[96%] p-[10px] flex items-center justify-between flex-col gap-[10px] absolute top-[85px] right-[2%] border-2 border-blue-500 rounded-[5px]">
+                        <a href="#about" className="block w-full text-[20px] font-medium text-center py-[6px] text-black border-2 border-blue-500 rounded-[5px] shadow-md"  onClick={handleLinkClick}>ABOUT</a>
+                        <a href="#skills" className="block w-full text-[20px] font-medium text-center py-[6px] text-black border-2 border-blue-500 rounded-[5px] shadow-md"  onClick={handleLinkClick}>SKILLS</a>
+                        <a href="#projects" className="block w-full text-[20px] font-medium text-center py-[6px] text-black border-2 border-blue-500 rounded-[5px] shadow-md" onClick={handleLinkClick}>PROJECTS</a>
+                        <a href="#education" className="block w-full text-[20px] font-medium text-center py-[6px] text-black border-2 border-blue-500 rounded-[5px] shadow-md"  onClick={handleLinkClick}>EDUCATION</a>
+                        <div className='w-full border-2 border-blue-500 rounded-[5px] shadow-md'>
                             <a href="https://github.com" className='flex py-[6px] bg-white text-[18px] items-center justify-center gap-[5px]'><img src={github} alt="Github logo" className='w-[30px] h-[30px]' />GitHub</a>
                         </div>
                     </div>
