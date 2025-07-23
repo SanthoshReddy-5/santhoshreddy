@@ -84,7 +84,7 @@ const EducationDetails = () => {
                   </p>
                 )}
                 {edu.desc && (
-                  <p className="text-gray-300 mt-1 text-sm leading-relaxed hidden group-hover:block transition-all duration-300">
+                  <p className="text-gray-300 mt-1 text-[16px] leading-relaxed hidden group-hover:block transition-all duration-300">
                     {edu.desc}
                   </p>
                 )}

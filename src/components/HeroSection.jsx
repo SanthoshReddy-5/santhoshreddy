@@ -25,8 +25,8 @@ const HeroSection = () => {
           </div>
           <div className="text-[18px] md:text-[25px] text-center md:text-left">I am a motivated and always eager to take up new challenges who loves solving problems and building useful solutions. I enjoy learning new things and always strive to do my best work.</div>
           <div className='flex items-center justify-between flex-col sm:flex-row gap-[20px] md:gap-[30px] my-[20px] md:mx-auto'>
-            <a href="#contact" className='px-[16px] py-[10px] md:px-[10px] md:py-[10px] border-2 border-blue-500 rounded-full text-purple-500 text-[15px] md:text-[20px] flex items-center justify-center gap-[5px]'>Contact Me <HiOutlineMail size={20}/></a>
-            <a href="https://drive.google.com/file/d/12xxq0G9Iy_p2b0J7DXovDGNSxraNtVkR/view?usp=drivesdk" className='px-[6px] py-[10px] md:px-[10px] md:py-[10px] bg-gradient-to-r from-purple-500 to-blue-500 border-2 border-blue-500 text-[15px] md:text-[20px] rounded-full flex items-center justify-center gap-[5px] text-white'>Check Resume <HiOutlineDocumentText size={20} /></a>
+            <a href="#contact" className='px-[18px] py-[10px] md:px-[12px] md:py-[10px] border-2 border-blue-500 rounded-full text-purple-500 text-[15px] md:text-[20px] flex items-center justify-center gap-[5px]'>Contact Me <HiOutlineMail size={20}/></a>
+            <a href="https://drive.google.com/file/d/12xxq0G9Iy_p2b0J7DXovDGNSxraNtVkR/view?usp=drivesdk" className='px-[8px] py-[10px] md:px-[12px] md:py-[10px] bg-gradient-to-r from-purple-500 to-blue-500 border-2 border-blue-500 text-[15px] md:text-[20px] rounded-full flex items-center justify-center gap-[5px] text-white'>Check Resume <HiOutlineDocumentText size={20} /></a>
           </div>
         </div>
 

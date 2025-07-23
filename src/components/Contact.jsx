@@ -50,7 +50,7 @@ const Contact = () => {
             <div className="text-purple-500 text-[25px] md:text-[30px] text-center font-semibold">Email Me 🚀</div>
             <div>
               <input type="email" name="from_email"
-                onChange={handleInputChange} className="w-full p-2 border-2 border-blue-500 rounded-[10px] text-gray-300 focus:text-white bg-[#1f1f2e] focus:border-purple-500 focus:outline-none transition duration-300" placeholder="your Email" />
+                onChange={handleInputChange} className="w-full p-2 border-2 border-blue-500 rounded-[10px] text-gray-300 focus:text-white bg-[#1f1f2e] focus:border-purple-500 focus:outline-none transition duration-300" placeholder="Your Email" />
             </div>
             <div>
               <input type="text" name="from_name"
