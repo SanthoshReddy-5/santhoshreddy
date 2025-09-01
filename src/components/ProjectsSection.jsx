@@ -1,78 +1,27 @@
-import React, { useState } from "react";
-import background from "../assets/background.png";
-import blinkit from "../assets/blinkit.png";
-import password from "../assets/password.png";
-import weather from "../assets/weather.png";
-import potato from "../assets/potato.png";
-import medicalchatbot from "../assets/medicalchatbot.png";
-import { FiExternalLink } from 'react-icons/fi';
-import { BiCodeAlt } from 'react-icons/bi';
+import React, { useState, useEffect } from "react";
 import { IoCloseSharp } from "react-icons/io5";
-
-const projects = [
-    {
-        title: "Background Generator",
-        description: "A gradient background generator creates smooth color transitions for backgrounds.",
-        image: background,
-        tags: ["HTML", "CSS", "JavaScript"],
-        sourceCode: "https://github.com/SanthoshReddy-5/BackgroundGenerator",
-        livePreview: "https://santhoshreddy-5.github.io/BackgroundGenerator"
-    },
-    {
-        title: "Medical Chatbot",
-        description: "A responsive web-based Medical Chatbot designed to provide medical information. It uses Google Gemini API, Pinecone, Sentence Transformers, Flask and the knowledge base is powered by context from The Gale Encyclopedia of Medicine (Second Edition).",
-        image: medicalchatbot,
-        tags: ["HTML", "CSS", "JavaScript", "LangChain", "Flask", "Pinecone", "Gemini API", "The Gale Encyclopedia of Medicine"],
-        sourceCode: "https://github.com/SanthoshReddy-5/MedicalChatBot"
-    },
-    {
-        title: "Password Manager",
-        description: "This project is a simple and secure password manager web application designed to store and manage credentials efficiently.",
-        image: password,
-        tags: ["React.js", "Node.js", "Express.js", "MySQL"],
-        sourceCode: "https://github.com/SanthoshReddy-5/passwordManager",
-    },
-    {
-        title: "BlinkIt Clone",
-        description: "Frontend clone of Blinkit using HTML and CSS, replicating the design and responsiveness of the Blinkit website.",
-        image: blinkit,
-        tags: ["HTML", "CSS"],
-        sourceCode: "https://github.com/SanthoshReddy-5/BlinkitFrontendClone",
-        livePreview: "https://santhoshreddy-5.github.io/BlinkitFrontendClone"
-    },
-    {
-        title: "Weather Application",
-        description: "Real-time weather app using OpenWeather API that displays city weather details like temperature, humidity, and conditions.",
-        image: weather,
-        tags: ["HTML", "CSS", "JavaScript", "openWeatherMapAPI"],
-        sourceCode: "https://github.com/SanthoshReddy-5/WeatherApplication",
-    },
-    {
-        title: "Potato Leaf Disease Classification",
-        description: "Classifies potato leaf diseases using CNN integrated with a Flask web app. Users can upload leaf images for instant diagnosis.",
-        image: potato,
-        tags: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
-        sourceCode: "https://github.com/SanthoshReddy-5/PotatoLeafDiseaseClassification",
-    }
-];
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { personalInfo, projects } from "../data/portfolioData";
 
 const ProjectsSection = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
-    const handleCardClick = (project) => {
-        setSelectedProject(project);
-    };
+    const handleCardClick = (project) => setSelectedProject(project);
+    const handleCloseModal = () => setSelectedProject(null);
 
-    const handleCloseModal = () => {
-        setSelectedProject(null);
-    };
+    useEffect(() => {
+        document.body.style.overflow = selectedProject ? "hidden" : "auto";
+        return () => { document.body.style.overflow = "auto"; };
+    }, [selectedProject]);
 
     return (
-        <div id="projects" className="w-full bg-gradient-to-br from-orange-100 via-white to-green-100">
+        <div id="projects" className="w-full bg-gradient-to-br from-green-100 via-white to-purple-100">
             <div className="max-w-[1280px] m-auto py-[20px]">
-                <div className="text-[30px] md:text-[40px] font-semibold pt-[20px] text-center text-purple-500">Projects</div>
-                <div className="text-center text-[18px] md:text-[25px] mt-[10px] px-[20px]">
-                    Here are some of my projects built using web technologies and machine learning tools.
+                <div className="text-[30px] md:text-[40px] font-semibold pt-[20px] text-center text-purple-500">
+                    Projects
+                </div>
+                <div className="text-center text-[16px] md:text-[20px] mt-[10px] px-[5px] md:w-2/3 mx-auto text-gray-800">
+                    Here are some of my projects that I built in the domains of Web Development and Artificial Intelligence & Machine Learning.
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-[10px]">
@@ -80,70 +29,59 @@ const ProjectsSection = () => {
                         <div
                             key={index}
                             onClick={() => handleCardClick(project)}
-                            className="cursor-pointer bg-[#1f1f2e] text-white p-4 rounded-[10px] shadow-md flex flex-col border-2 border-blue-500"
+                            className="cursor-pointer bg-[#1f1f2e] text-white p-4 rounded-[10px] shadow-md flex flex-col border-2 border-blue-500 scrolls"
                         >
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="rounded-[5px] w-full object-cover border-2 border-blue-500"
+                                className="rounded-[5px] w-full object-cover"
                             />
                             <div className="flex flex-wrap gap-2 my-3">
                                 {project.tags.map((tag, i) => (
-                                    <span
-                                        key={i}
-                                        className="px-3 py-1 text-[14px] bg-[#2b2b3c] border-2 border-blue-500 rounded-[5px]"
-                                    >
+                                    <span key={i} className="px-2 py-1 text-[12px] md:text-[14px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500">
                                         {tag}
                                     </span>
                                 ))}
                             </div>
-                            <h3 className="text-[16px] md:text-[20px] font-bold mb-2">{project.title}</h3>
-                            <p className="text-[15px] text-gray-300 line-clamp-3 flex-grow">
+                            <h3 className="text-[16px] md:text-[20px] font-bold mb-1">{project.title}</h3>
+                            <span className="text-[14px] md:text-[16px] text-gray-300 mb-2">{project.duration || ""}</span>
+                            <p className="text-[15px] text-gray-300 line-clamp-2 flex-grow">
                                 {project.description}
                             </p>
 
-                            {(project.sourceCode || project.livePreview) && (
-                                <div
-                                    className={`flex ${project.sourceCode && project.livePreview ? "flex-row justify-around gap-[5px]" : "flex-col"
-                                        } mt-3 w-full`}
-                                >
-                                    {project.sourceCode && (
-                                        <a
-                                            href={project.sourceCode}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className={`text-center text-[12px] md:text-[16px] text-purple-500 bg-white px-4 md:px-6 py-2 rounded-[5px] border-2 border-blue-500 flex items-center justify-center gap-[5px] ${project.livePreview ? "w-full md:w-auto" : "w-full"
-                                                }`}
-                                            onClick={(e) => e.stopPropagation()}
-                                        >
-                                            <span>Source Code</span> <BiCodeAlt />
-                                        </a>
-                                    )}
-                                    {project.livePreview && (
-                                        <a
-                                            href={project.livePreview}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className={`text-center text-[12px] md:text-[16px] text-purple-500 bg-white px-4 md:px-6 py-2 rounded-[5px] border-2 border-blue-500 flex items-center justify-center gap-[5px] ${project.sourceCode ? "w-full md:w-auto" : "w-full"
-                                                }`}
-                                            onClick={(e) => e.stopPropagation()}
-                                        >
-                                            <span>Live Preview</span> <FiExternalLink />
-                                        </a>
-                                    )}
-                                </div>
-                            )}
+                            <div className="flex flex-row gap-2 mt-4 w-full">
+                                {project.sourceCode && (
+                                    <a
+                                        href={project.sourceCode}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1 text-center px-2 py-2 bg-green-500/50 md:bg-green-500/50 hover:bg-green-500/80 border-2 border-green-500 rounded-md text-white text-sm md:text-base flex items-center justify-center gap-1"
+                                    >
+                                        Source Code
+                                    </a>
+                                )}
+                                {project.livePreview && (
+                                    <a
+                                        href={project.livePreview}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1 text-center px-2 py-2 bg-purple-500/50 md:bg-purple-500/50 hover:bg-purple-500/80 border-2 border-purple-500 rounded-md text-white text-sm md:text-base flex items-center justify-center gap-1"
+                                    >
+                                        Live Preview
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
 
             {selectedProject && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
-                    <div className="relative max-w-4xl w-[95%] bg-[#1f1f2e] text-white rounded-[10px] p-6 border-2 border-blue-500 overflow-auto max-h-[90vh]">
+                <div className="fixed inset-0 z-50 overflow-auto bg-black/90 p-1 md:p-4 flex justify-center items-center md:items-start animate-fadeIn">
+                    <div className="relative bg-[#1f1f2e] text-white rounded-[10px] w-full sm:w-[90%] max-w-4xl mx-auto p-5 md:p-10 flex flex-col transform transition-transform duration-300 scale-95 animate-scaleUp border-2 border-blue-500">
                         <button
                             onClick={handleCloseModal}
-                            className="absolute top-3 right-3 cursor-pointer text-white text-3xl hover:text-red-500"
+                            className="absolute top-3 md:top-4 right-2 md:right-4 cursor-pointer text-white text-[24px] md:text-[32px] hover:text-red-500"
                         >
                             <IoCloseSharp />
                         </button>
@@ -151,29 +89,67 @@ const ProjectsSection = () => {
                         <img
                             src={selectedProject.image}
                             alt={selectedProject.title}
-                            className="w-full h-auto rounded-[5px] mt-[30px] border-2 border-blue-500"
+                            className="w-full h-auto rounded-[5px] mt-[20px]"
                         />
 
-                        <div className="flex flex-wrap gap-2 my-4">
+                        <div className="flex gap-2 my-4 flex-wrap">
                             {selectedProject.tags.map((tag, i) => (
-                                <span key={i} className="px-2 py-1 text-[14px] md:text-[18px] bg-[#2b2b3c] border-2 border-blue-500 rounded-[5px]">
-                                    {tag}
-                                </span>
+                                <span key={i} className="px-2 py-1 text-[14px] md:text-[18px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer">{tag}</span>
                             ))}
                         </div>
 
-                        <h2 className="text-[20px] md:text-[25px] font-bold text-white mb-2">{selectedProject.title}</h2>
+                        <h2 className="text-[20px] md:text-[25px] font-bold text-white mb-1">{selectedProject.title}</h2>
+                        <span className="text-[16px] md:text-[18px] text-gray-300 mb-4">{selectedProject.duration || ""}</span>
                         <p className="text-[16px] md:text-[20px] text-gray-300 mb-4">{selectedProject.description}</p>
 
-                        <div className="flex items-center justify-center gap-[10px] flex-wrap">
+                        <div className="mb-4">
+                            <h3 className="font-semibold text-gray-100 mb-2 text-[16px] md:text-[22px]">Team Members</h3>
+                            <div className="flex flex-col gap-3">
+                                <div className="flex items-center gap-3">
+                                    <img
+                                        src={personalInfo.developerImage}
+                                        alt="Santhosh Reddy"
+                                        className="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover border border-blue-500"
+                                    />
+                                    <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">Santhosh Reddy</span>
+                                    <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                        <FaGithub size={30} />
+                                    </a>
+                                    <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                        <FaLinkedin size={30} />
+                                    </a>
+                                </div>
+
+                                {selectedProject.collaborators && selectedProject.collaborators.length > 0 && (
+                                    selectedProject.collaborators.map((col, index) => (
+                                        <div key={index} className="flex items-center gap-3">
+                                            <img
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                                alt={col.name}
+                                                className="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover border border-blue-500"
+                                            />
+                                            <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">{col.name}</span>
+                                            <a href={col.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                                <FaGithub size={30} />
+                                            </a>
+                                            <a href={col.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                                <FaLinkedin size={30} />
+                                            </a>
+                                        </div>
+                                    ))
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row gap-4 mt-4 w-full justify-center flex-wrap">
                             {selectedProject.sourceCode && (
                                 <a
                                     href={selectedProject.sourceCode}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-purple-500 bg-white w-full py-2 md:py-3 text-[18px] rounded-[5px] border-2 border-blue-500 flex items-center justify-center gap-[5px]"
+                                    className="flex-1 text-center px-4 py-2 md:py-3 bg-green-500/50 md:bg-green-500/50 hover:bg-green-500/80 border-2 border-green-500 rounded-md text-white font-semibold flex items-center justify-center gap-2 min-w-[140px]"
                                 >
-                                    Source Code <BiCodeAlt />
+                                    Source Code
                                 </a>
                             )}
                             {selectedProject.livePreview && (
@@ -181,9 +157,9 @@ const ProjectsSection = () => {
                                     href={selectedProject.livePreview}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-purple-500 bg-white w-full py-2 md:py-3 text-[18px] rounded-[5px] border-2 border-blue-500 flex items-center justify-center gap-[5px]"
+                                    className="flex-1 text-center px-4 py-2 md:py-3 bg-purple-500/50 md:bg-purple-500/50 hover:bg-purple-500/80 border-2 border-purple-500 rounded-md text-white font-semibold flex items-center justify-center gap-2 min-w-[140px]"
                                 >
-                                    Live Preview <FiExternalLink />
+                                    Live Preview
                                 </a>
                             )}
                         </div>

@@ -35,7 +35,7 @@ const educationData = [
 
 const EducationDetails = () => {
   return (
-    <div id="education" className="w-full bg-gradient-to-br from-green-100 via-white to-blue-100 py-10">
+    <div id="education" className="w-full bg-gradient-to-br from-purple-100 via-white to-cyan-100 py-10">
       <div className="max-w-[1280px] mx-auto px-4">
         <h2 className="text-[30px] md:text-[40px] font-semibold text-center text-purple-500 mb-10">
           Educational Details
@@ -46,7 +46,7 @@ const EducationDetails = () => {
             <div key={index} className="mb-10 relative group">
               <div className="absolute left-[-35px] w-5 h-5 bg-white rounded-full border-4 border-blue-500"></div>
 
-              <div className="bg-[#1f1f2e] text-white p-5 rounded-xl shadow-md border-2 border-blue-500 w-full transition-all duration-300 ease-in-out">
+              <div className="bg-[#1f1f2e] text-white p-5 rounded-xl shadow-md border-2 border-blue-500 w-full transition-all duration-300 ease-in-out cursor-pointer">
                 <div className="flex items-center gap-4 mb-1 flex-wrap">
                   {edu.logo ? (
                     <img
@@ -84,7 +84,7 @@ const EducationDetails = () => {
                   </p>
                 )}
                 {edu.desc && (
-                  <p className="text-gray-300 mt-1 text-[16px] leading-relaxed hidden group-hover:block transition-all duration-300">
+                  <p className="text-gray-400 mt-1 text-[14px] md:text-[16px] leading-relaxed md:hidden md:group-hover:block transition-all duration-300">
                     {edu.desc}
                   </p>
                 )}
