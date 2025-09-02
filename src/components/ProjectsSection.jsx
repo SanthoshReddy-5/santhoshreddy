@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { personalInfo, projects } from "../data/portfolioData";
+import profile from "../assets/profile.png";
 
 const ProjectsSection = () => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -111,11 +112,11 @@ const ProjectsSection = () => {
                                         alt="Santhosh Reddy"
                                         className="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover border border-blue-500"
                                     />
-                                    <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">Santhosh Reddy</span>
-                                    <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                    <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">Santhosh Reddy (Me)</span>
+                                    <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500">
                                         <FaGithub size={30} />
                                     </a>
-                                    <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                    <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500">
                                         <FaLinkedin size={30} />
                                     </a>
                                 </div>
@@ -124,15 +125,15 @@ const ProjectsSection = () => {
                                     selectedProject.collaborators.map((col, index) => (
                                         <div key={index} className="flex items-center gap-3">
                                             <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                                src={col.image || profile}
                                                 alt={col.name}
                                                 className="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover border border-blue-500"
                                             />
                                             <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">{col.name}</span>
-                                            <a href={col.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                            <a href={col.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500 cursor-pointer">
                                                 <FaGithub size={30} />
                                             </a>
-                                            <a href={col.linkedin} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500">
+                                            <a href={col.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500 cursor-pointer">
                                                 <FaLinkedin size={30} />
                                             </a>
                                         </div>
