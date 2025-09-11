@@ -135,7 +135,13 @@ export const projects = [
         tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "TensorFlow", "Jupyter Notebook"],
         sourceCode: "https://github.com/SanthoshReddy-5/PotatoLeafDiseaseClassification",
         duration: "Oct 2024 - Dec 2024",
-        collaborators: []
+        collaborators: [
+            {
+               name:"Vinay Kumar Reddy",
+               github:"https://github.com/vinaykumarreddy9",
+               linkedin:"https://www.linkedin.com/in/kovvuri-vinay-kumar-reddy",
+            }
+        ]
     },
     {
         title: "Password Manager",

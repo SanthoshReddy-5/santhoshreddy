@@ -78,7 +78,7 @@ const ProjectsSection = () => {
             </div>
 
             {selectedProject && (
-                <div className="fixed inset-0 z-50 overflow-auto bg-black/90 p-1 md:p-4 flex justify-center items-center md:items-start animate-fadeIn">
+                <div className="fixed inset-0 z-50 overflow-auto bg-black/90 p-1 md:p-4 flex justify-center items-start animate-fadeIn">
                     <div className="relative bg-[#1f1f2e] text-white rounded-[10px] w-full sm:w-[90%] max-w-4xl mx-auto p-5 md:p-10 flex flex-col transform transition-transform duration-300 scale-95 animate-scaleUp border-2 border-blue-500">
                         <button
                             onClick={handleCloseModal}
