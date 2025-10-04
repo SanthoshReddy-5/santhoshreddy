@@ -36,13 +36,13 @@ import docker from "../assets/docker.png";
 import aws from "../assets/aws.png";
 import pinecone from "../assets/pinecone.png";
 import firebase from "../assets/firebase.png";
+import utkarsh from "../assets/utkarsh.png";
 //import certificateImg from "../assets/background.png";
 
 export const personalInfo = {
     name: "Santhosh Reddy",
     fullName: "Velagala Jaya Naga Santhosh Reddy",
     developerImage: developerImage,
-    tagline: "Motivated Full-Stack Developer",
     about: `I am a motivated and versatile individual, always eager to take on new challenges.
                 I continuously learn and adapt to new technologies to deliver high-quality results.
                 With a positive attitude and a growth mindset, I am ready to make meaningful 
@@ -110,6 +110,22 @@ export const experiences = [
 
 export const projects = [
     {
+        title: "Utkarsh 2025 - Website",
+        description: "Utkarsh 2025 is the official website for the annual tech and cultural fest of Swarnandhra College of Engineering and Technology, organized by the IT Department (IT & DS). It serves as a registration portal for the 24-hour hackathon, technical and non-technical events and online games conducted during the fest. The website features a responsive, user-friendly design that ensures a smooth and engaging experience for all participants.",
+        image: utkarsh,
+        tags: ["TailwindCSS", "React.js", "TypeScript", "Shadcn", "Lovable"],
+        livePreview: "https://www.swarnandhra.ac.in/utkarsh2025",
+        sourceCode: "https://github.com/sumanthreddy217/Utkarsh2k25",
+        duration: "Aug 2025",
+        collaborators: [
+            {
+               name:"Sumanth Reddy",
+               github:"https://github.com/sumanthreddy217",
+               linkedin:"https://www.linkedin.com/in/k-sumanth-reddy",
+            }
+        ]
+    },
+    {
         title: "Medical Chatbot",
         description: "A responsive web-based Medical Chatbot designed to provide medical information. It uses Google Gemini API, Pinecone, Sentence Transformers, Flask and the knowledge base is powered by context from The Gale Encyclopedia of Medicine (Second Edition).",
         image: medicalchatbot,
@@ -152,16 +168,6 @@ export const projects = [
         duration: "Apr 2024 - May 2024",
         collaborators: []
     },
-    // {
-    //     title: "BlinkIt Clone",
-    //     description: "Frontend clone of Blinkit using HTML and CSS, replicating the design and responsiveness of the Blinkit website.",
-    //     image: blinkit,
-    //     tags: ["HTML", "CSS"],
-    //     sourceCode: "https://github.com/SanthoshReddy-5/BlinkitFrontendClone",
-    //     livePreview: "https://santhoshreddy-5.github.io/BlinkitFrontendClone",
-    //     duration: "Dec 2023 - Jan 2024",
-    //     collaborators: []
-    // },
     {
         title: "Weather Application",
         description: "This project is a real-time weather web app built with HTML, CSS, and JavaScript that fetches data from the OpenWeather API. Users can search any city to instantly view temperature, humidity, wind, and current conditions. It handles API responses gracefully with loading states and error messages for invalid locations. A clean, responsive UI makes the weather details easy to read on both desktop and mobile.",
@@ -169,6 +175,16 @@ export const projects = [
         tags: ["HTML", "CSS", "JavaScript", "openWeatherMapAPI"],
         sourceCode: "https://github.com/SanthoshReddy-5/WeatherApplication",
         duration: "Jan 2024",
+        collaborators: []
+    },
+    {
+        title: "BlinkIt Clone",
+        description: "A frontend clone of Blinkit using HTML and CSS, replicating the design of the website.",
+        image: blinkit,
+        tags: ["HTML", "CSS"],
+        sourceCode: "https://github.com/SanthoshReddy-5/BlinkitFrontendClone",
+        livePreview: "https://santhoshreddy-5.github.io/BlinkitFrontendClone",
+        duration: "Dec 2023 - Jan 2024",
         collaborators: []
     },
     {
