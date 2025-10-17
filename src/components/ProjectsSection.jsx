@@ -49,29 +49,6 @@ const ProjectsSection = () => {
                             <p className="text-[15px] text-gray-300 line-clamp-2 flex-grow">
                                 {project.description}
                             </p>
-
-                            <div className="flex flex-row gap-2 mt-4 w-full">
-                                {project.sourceCode && (
-                                    <a
-                                        href={project.sourceCode}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 text-center px-2 py-2 bg-green-500/50 md:bg-green-500/50 hover:bg-green-500/80 border-2 border-green-500 rounded-md text-white text-sm md:text-base flex items-center justify-center gap-1"
-                                    >
-                                        Source Code
-                                    </a>
-                                )}
-                                {project.livePreview && (
-                                    <a
-                                        href={project.livePreview}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 text-center px-2 py-2 bg-purple-500/50 md:bg-purple-500/50 hover:bg-purple-500/80 border-2 border-purple-500 rounded-md text-white text-sm md:text-base flex items-center justify-center gap-1"
-                                    >
-                                        Live Preview
-                                    </a>
-                                )}
-                            </div>
                         </div>
                     ))}
                 </div>
@@ -95,13 +72,13 @@ const ProjectsSection = () => {
 
                         <div className="flex gap-2 my-4 flex-wrap">
                             {selectedProject.tags.map((tag, i) => (
-                                <span key={i} className="px-2 py-1 text-[14px] md:text-[18px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer">{tag}</span>
+                                <span key={i} className="px-1 md:px-2 py-0.5 md:py-1 text-[10px] md:text-[18px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer">{tag}</span>
                             ))}
                         </div>
 
-                        <h2 className="text-[20px] md:text-[25px] font-bold text-white mb-1">{selectedProject.title}</h2>
-                        <span className="text-[16px] md:text-[18px] text-gray-300 mb-4">{selectedProject.duration || ""}</span>
-                        <p className="text-[16px] md:text-[20px] text-gray-300 mb-4">{selectedProject.description}</p>
+                        <h2 className="text-[18px] md:text-[25px] font-bold text-white mb-1">{selectedProject.title}</h2>
+                        <span className="text-[14px] md:text-[18px] text-gray-300 mb-4">{selectedProject.duration || ""}</span>
+                        <p className="text-[12px] md:text-[20px] text-gray-300 mb-4">{selectedProject.description}</p>
 
                         <div className="mb-4">
                             <h3 className="font-semibold text-gray-100 mb-2 text-[16px] md:text-[22px]">Team Members</h3>
@@ -110,9 +87,9 @@ const ProjectsSection = () => {
                                     <img
                                         src={personalInfo.developerImage}
                                         alt="Santhosh Reddy"
-                                        className="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover border border-blue-500"
+                                        className="w-8 md:w-12 h-8 md:h-12 rounded-full object-cover border border-blue-500"
                                     />
-                                    <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">Santhosh Reddy (Me)</span>
+                                    <span className="font-medium text-[12px] md:text-[18px] mr-[20px] text-gray-200">Santhosh Reddy (Me)</span>
                                     <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500">
                                         <FaGithub size={30} />
                                     </a>
@@ -127,9 +104,9 @@ const ProjectsSection = () => {
                                             <img
                                                 src={col.image || profile}
                                                 alt={col.name}
-                                                className="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover border border-blue-500"
+                                                className="w-8 md:w-12 h-8 md:h-12 rounded-full object-cover border border-blue-500"
                                             />
-                                            <span className="font-medium text-[16px] md:text-[18px] mr-[20px] text-gray-200">{col.name}</span>
+                                            <span className="font-medium text-[12px] md:text-[18px] mr-[20px] text-gray-200">{col.name}</span>
                                             <a href={col.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500 cursor-pointer">
                                                 <FaGithub size={30} />
                                             </a>
@@ -148,7 +125,7 @@ const ProjectsSection = () => {
                                     href={selectedProject.sourceCode}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 text-center px-4 py-2 md:py-3 bg-green-500/50 md:bg-green-500/50 hover:bg-green-500/80 border-2 border-green-500 rounded-md text-white font-semibold flex items-center justify-center gap-2 min-w-[140px]"
+                                    className="flex-1 text-center px-2 md:px-4 py-1.5 text-[14px] md:text-[18px] md:py-3 bg-green-500/50 md:bg-green-500/50 hover:bg-green-500/80 border-2 border-green-500 rounded-md text-white font-semibold flex items-center justify-center gap-2 min-w-[140px]"
                                 >
                                     Source Code
                                 </a>
@@ -158,7 +135,7 @@ const ProjectsSection = () => {
                                     href={selectedProject.livePreview}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 text-center px-4 py-2 md:py-3 bg-purple-500/50 md:bg-purple-500/50 hover:bg-purple-500/80 border-2 border-purple-500 rounded-md text-white font-semibold flex items-center justify-center gap-2 min-w-[140px]"
+                                    className="flex-1 text-center px-2 md:px-4 py-1.5 text-[14px] md:text-[18px] md:py-3 bg-purple-500/50 md:bg-purple-500/50 hover:bg-purple-500/80 border-2 border-purple-500 rounded-md text-white font-semibold flex items-center justify-center gap-2 min-w-[140px]"
                                 >
                                     Live Preview
                                 </a>
