@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { personalInfo, projects } from "../data/portfolioData";

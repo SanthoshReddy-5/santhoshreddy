@@ -1,4 +1,3 @@
-import React from 'react';
 import { TypeAnimation } from "react-type-animation";
 import { HiOutlineMail, HiOutlineDocumentText } from 'react-icons/hi';
 import { personalInfo } from '../data/portfolioData';

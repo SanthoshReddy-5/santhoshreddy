@@ -1,19 +1,17 @@
-import developerImage from "../assets/developerImage.webp";
-import background from "../assets/background.png";
-import blinkit from "../assets/blinkit.png";
+import developerImage from "../assets/developerImage.jpg";
 import password from "../assets/password.png";
 import weather from "../assets/weather.png";
 import potato from "../assets/potato.png";
-import medicalchatbot from "../assets/medicalchatbot.png";
+import medicalchatbot from "../assets/chatbot.png";
 import react from "../assets/react.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
-import tailwind from "../assets/tailwind.webp";
+import tailwind from "../assets/tailwind.png";
 import nodejs from "../assets/nodejs.png";
 import mysql from "../assets/mysql.png";
 import express from "../assets/express.png";
-import mongodb from "../assets/mongodb.webp";
+import mongodb from "../assets/mongodb.png";
 import python from "../assets/python.png";
 import pandas from "../assets/pandas.png";
 import numpy from "../assets/numpy.png";
@@ -22,22 +20,22 @@ import sklearn from "../assets/sklearn.png";
 import tensorflow from "../assets/tensorflow.png";
 import git from "../assets/git.png";
 import github from "../assets/github.png";
-import java from "../assets/java.png";
 import postman from "../assets/postman.png";
 import vscode from "../assets/vscode.png";
-import android from "../assets/android.webp";
 import netlify from "../assets/netlify.png";
-import powerbi from "../assets/powerbi.png";
-import flutter from "../assets/flutter.png";
-import streamlit from "../assets/streamlit.png";
 import trackpocket from "../assets/trackpocket.png";
 import langchain from "../assets/langchain.png";
 import docker from "../assets/docker.png";
 import aws from "../assets/aws.png";
 import pinecone from "../assets/pinecone.png";
-import firebase from "../assets/firebase.png";
 import utkarsh from "../assets/utkarsh.png";
-//import certificateImg from "../assets/background.png";
+import next from "../assets/next.png";
+import typescript from "../assets/typescript.png";
+import flask from "../assets/flask.png";
+import firebase from "../assets/firebase.png";
+import bootstrap from "../assets/bootstrap.png";
+import jupyter from "../assets/jupyter.png";
+//import certificateImg from "../assets/certificate.png";
 
 export const personalInfo = {
     name: "Santhosh Reddy",
@@ -69,23 +67,23 @@ export const personalInfo = {
 export const skills = [
     {
         title: "Frontend",
-        skills: ["React Js","HTML","CSS","JavaScript","TailwindCSS","Flutter"],
-        logos: [react, html, css, js, tailwind, flutter]
+        skills: ["HTML","CSS","JavaScript","TailwindCSS","Bootstap", "React.js","TypeScript","Next.js"],
+        logos: [ html, css, js, tailwind, bootstrap, react, typescript, next]
     },
     {
         title: "Backend",
-        skills: ["Node Js", "MySQL", "Express Js", "MongoDB","Java","Firebase"],
-        logos: [nodejs, mysql, express, mongodb,java,firebase]
+        skills: ["Node.js", "Express.js", "MongoDB", "MySQL", "Flask","Firebase"],
+        logos: [nodejs, express, mongodb, mysql, flask, firebase]
     },
     {
         title: "AI & ML",
-        skills: ["Python", "NumPy", "Matplotlib", "Scikit-Learn", "Pandas", "TensorFlow", "Streamlit","LangChain","Pinecone"],
-        logos: [python, numpy, matplot, sklearn, pandas, tensorflow, streamlit,langchain,pinecone]
+        skills: ["Python", "NumPy", "Matplotlib", "Scikit-Learn", "Pandas", "TensorFlow", "LangChain","Pinecone"],
+        logos: [python, numpy, matplot, sklearn, pandas, tensorflow, langchain,pinecone]
     },
     {
         title: "Others",
-        skills: ["GitHub","VS Code", "Power BI", "Netlify", "Postman", "Android Studio", "Git","Docker","AWS"],
-        logos: [github, vscode, powerbi, netlify, postman, android, git,docker,aws]
+        skills: ["GitHub","VS Code", "Git", "Postman", "Netlify","Docker","AWS", "Jupyter Notebook"],
+        logos: [github, vscode, git, postman, netlify, docker, aws, jupyter]
     },
 ];
 
@@ -97,9 +95,9 @@ export const experiences = [
             "ARTIFICIAL INTELLIGENCE MEDICAL AND ENGINEERING RESEARCHERS SOCIETY (AIMERS)",
         duration: "May 2024 - Jul 2024",
         description: [
-            "Developed an AI chatbot capable of answering queries using NLP and ML.",
-            "Designed and developed dynamic data visualizations and dashboards using Power BI.",
-            "Gained knowledge of cybersecurity concepts and best practices.",
+            "Developed an AI chatbot capable of answering queries using NLP and ML, implementing intent recognition and contextual responses to improve user interaction.",
+            "Designed and developed dynamic data visualizations and interactive dashboards using Power BI, enabling actionable insights and real-time data analysis.",
+            "Gained knowledge of cybersecurity concepts and best practices, including threat detection, risk mitigation, and secure coding principles."
         ],
         skills: ["NLP","Object Detection", "Machine Learning", "Power BI", "Cybersecurity"],
         certificate: "",
@@ -176,25 +174,5 @@ export const projects = [
         sourceCode: "https://github.com/SanthoshReddy-5/WeatherApplication",
         duration: "Jan 2024",
         collaborators: []
-    },
-    {
-        title: "BlinkIt Clone",
-        description: "A frontend clone of Blinkit using HTML and CSS, replicating the design of the website.",
-        image: blinkit,
-        tags: ["HTML", "CSS"],
-        sourceCode: "https://github.com/SanthoshReddy-5/BlinkitFrontendClone",
-        livePreview: "https://santhoshreddy-5.github.io/BlinkitFrontendClone",
-        duration: "Dec 2023 - Jan 2024",
-        collaborators: []
-    },
-    {
-        title: "Background Generator",
-        description: "This project is a simple gradient background generator built with HTML, CSS, and JavaScript. It creates smooth left-to-right color transitions for backgrounds. Users can change each of the two colors using dedicated buttons and instantly preview the gradient. The generated CSS code can then be copied and used directly in any project.",
-        image: background,
-        tags: ["HTML", "CSS", "JavaScript"],
-        sourceCode: "https://github.com/SanthoshReddy-5/BackgroundGenerator",
-        livePreview: "https://santhoshreddy-5.github.io/BackgroundGenerator",
-        duration: "Sept 2023",
-        collaborators: []
-    },
+    }
 ];

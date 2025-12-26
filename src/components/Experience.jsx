@@ -21,28 +21,26 @@ const Experience = () => {
               <div className="absolute left-[-35px] w-5 h-5 bg-white rounded-full border-4 border-blue-500"></div>
 
               <div className="bg-[#1f1f2e] text-white p-6 md:p-8 rounded-2xl border-2 border-blue-500 w-full relative flex flex-col md:flex-row md:items-center gap-6">
-
                 <div className="flex-1">
-                  <h3 className="text-[18px] md:text-[24px] font-bold mb-1">
+                  <h3 className="text-[18px] md:text-[24px] font-bold mb-1 text-purple-500">
                     {exp.title}
                   </h3>
-                  <p className="text-purple-500 font-semibold mb-1 text-[16px] md:text-[20px]">
+                  <p className="font-semibold mb-1 text-[16px] md:text-[20px]">
                     {exp.organization}
                   </p>
                   <span className="text-gray-300 text-sm md:text-[16px] mb-1 block">
                     {exp.duration}
                   </span>
 
-                  <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[70%]">
+                  <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[85%]">
                     {exp.description.join(" ")}
                   </p>
 
-                  <div className="mt-2 flex flex-wrap gap-2">
+                  <div className="mt-3 flex flex-wrap gap-2">
                     {exp.skills?.map((skill, idx) => (
                       <span
                         key={idx}
-                        className="text-xs md:text-sm px-2 py-1 rounded-md bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer"
-                      >
+                        className="text-xs md:text-sm px-2 py-1 rounded-md bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer">
                         {skill}
                       </span>
                     ))}

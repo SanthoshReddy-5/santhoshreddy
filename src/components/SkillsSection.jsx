@@ -1,4 +1,3 @@
-import React from "react";
 import { skills } from "../data/portfolioData";
 
 const SkillsSection = () => {
@@ -15,14 +14,13 @@ const SkillsSection = () => {
                     {skills.map((category, index) => (
                         <div
                             key={index}
-                            className="bg-[#1f1f2e] px-2 py-6 rounded-[10px] border-2 border-blue-500 shadow-md"
-                        >
+                            className="bg-[#1f1f2e] px-2 md:px-5 py-6 md:py-8 rounded-[10px] border-2 border-blue-500 shadow-md">
                             <h3 className="text-[18px] md:text-[24px] font-medium text-white text-center mb-4">{category.title}</h3>
-                            <div className="flex flex-wrap gap-3 justify-center">
+                            <div className="flex flex-wrap gap-3 md:gap-3.5 justify-center">
                                 {category.skills.map((skill, skillIndex) => (
                                     <div
                                         key={skillIndex}
-                                        className="p-2 md:p-3 rounded-[5px] text-[14px] md:text-[16px] border flex items-center justify-center gap-[8px] cursor-pointer bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border-blue-500"
+                                        className="p-2 md:px-3 rounded-[5px] text-[14px] md:text-[16px] border flex items-center justify-center gap-[8px] cursor-pointer bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border-blue-500"
                                     ><img src={category.logos[skillIndex]} alt={skill} className='w-[25px] md:w-[30px] h-[25px] md:h-[30px]' />
                                         {skill}
                                     </div>

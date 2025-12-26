@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { personalInfo } from "../data/portfolioData";
