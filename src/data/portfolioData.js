@@ -27,7 +27,6 @@ import trackpocket from "../assets/trackpocket.png";
 import langchain from "../assets/langchain.png";
 import docker from "../assets/docker.png";
 import aws from "../assets/aws.png";
-import pinecone from "../assets/pinecone.png";
 import utkarsh from "../assets/utkarsh.png";
 import next from "../assets/next.png";
 import typescript from "../assets/typescript.png";
@@ -35,6 +34,7 @@ import flask from "../assets/flask.png";
 import firebase from "../assets/firebase.png";
 import bootstrap from "../assets/bootstrap.png";
 import jupyter from "../assets/jupyter.png";
+import streamlit from "../assets/streamlit.png";
 //import certificateImg from "../assets/certificate.png";
 
 export const personalInfo = {
@@ -47,46 +47,44 @@ export const personalInfo = {
                 contributions and achieve great things.`,
     roles: [
         "AI/ML Engineer", 1000,
-        "Full Stack Web Developer", 1000,
+        "Full Stack Developer", 1000,
         "Data Scientist", 1000,
         "Programmer", 1000
     ],
-    resume: "https://drive.google.com/file/d/1OB2mlE-m3aQV8rtjX83MnIUu6zygd0B_/view?usp=drivesdk",
+    resume: "https://drive.google.com/file/d/16M_Nwyxc8BqlBxsLIid65w8DV1W9IinM/view?usp=drivesdk",
     location: "Aravalli, Andhra Pradesh",
     email: "example@gmail.com",
     phone: "+91 xxxxx xxxxx",
     socials: {
         github: "https://github.com/SanthoshReddy-5",
-        linkedin: "https://www.linkedin.com/in/santhosh-reddy-6a977a2ba",
+        linkedin: "https://www.linkedin.com/in/santhosh-reddy5",
         instagram: "https://instagram.com/santhosh__reddy__5",
         leetcode: "https://leetcode.com/u/santhosh__reddy__5"
     },
 }
 
-
 export const skills = [
     {
         title: "Frontend",
-        skills: ["HTML","CSS","JavaScript","TailwindCSS","Bootstap", "React.js","TypeScript","Next.js"],
-        logos: [ html, css, js, tailwind, bootstrap, react, typescript, next]
+        skills: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Bootstap", "React.js", "TypeScript", "Next.js"],
+        logos: [html, css, js, tailwind, bootstrap, react, typescript, next]
     },
     {
         title: "Backend",
-        skills: ["Node.js", "Express.js", "MongoDB", "MySQL", "Flask","Firebase"],
+        skills: ["Node.js", "Express.js", "MongoDB", "MySQL", "Flask", "Firebase"],
         logos: [nodejs, express, mongodb, mysql, flask, firebase]
     },
     {
         title: "AI & ML",
-        skills: ["Python", "NumPy", "Matplotlib", "Scikit-Learn", "Pandas", "TensorFlow", "LangChain","Pinecone"],
-        logos: [python, numpy, matplot, sklearn, pandas, tensorflow, langchain,pinecone]
+        skills: ["Python", "NumPy", "Matplotlib", "Scikit-Learn", "Pandas", "TensorFlow", "Streamlit", "LangChain"],
+        logos: [python, numpy, matplot, sklearn, pandas, tensorflow, streamlit, langchain,]
     },
     {
         title: "Others",
-        skills: ["GitHub","VS Code", "Git", "Postman", "Netlify","Docker","AWS", "Jupyter Notebook"],
+        skills: ["GitHub", "VS Code", "Git", "Postman", "Netlify", "Docker", "AWS", "Jupyter Notebook"],
         logos: [github, vscode, git, postman, netlify, docker, aws, jupyter]
     },
 ];
-
 
 export const experiences = [
     {
@@ -94,17 +92,18 @@ export const experiences = [
         organization:
             "ARTIFICIAL INTELLIGENCE MEDICAL AND ENGINEERING RESEARCHERS SOCIETY (AIMERS)",
         duration: "May 2024 - Jul 2024",
-        description: [
-            "Developed an AI chatbot capable of answering queries using NLP and ML, implementing intent recognition and contextual responses to improve user interaction.",
-            "Designed and developed dynamic data visualizations and interactive dashboards using Power BI, enabling actionable insights and real-time data analysis.",
-            "Gained knowledge of cybersecurity concepts and best practices, including threat detection, risk mitigation, and secure coding principles."
-        ],
-        skills: ["NLP","Object Detection", "Machine Learning", "Power BI", "Cybersecurity"],
-        certificate: "",
+        description: 
+            `Built a Telegram chatbot integrating OpenWeatherMap API for real-time weather updates,
+            Hugging Face models for question answering, text-to-image generation, and table-based 
+            insights, and OpenAI API for advanced conversational AI, delivering intelligent multimodal 
+            and interactive experiences. Designed and developed dynamic, interactive dashboards in Power BI, 
+            transforming complex datasets into actionable business insights, enabling data-driven 
+            decision-making and improving organizational performance.`,
+        skills: ["NLP", "Artificial Intelligence","Object Detection", "Machine Learning", "Power BI", "Hugging Face",
+             "Large Language Models", "YOLOv8"],
+    certificate: "",
     },
-    // Add more experiences here
 ];
-
 
 export const projects = [
     {
@@ -117,9 +116,9 @@ export const projects = [
         duration: "Aug 2025",
         collaborators: [
             {
-               name:"Sumanth Reddy",
-               github:"https://github.com/sumanthreddy217",
-               linkedin:"https://www.linkedin.com/in/k-sumanth-reddy",
+                name: "Sumanth Reddy",
+                github: "https://github.com/sumanthreddy217",
+                linkedin: "https://www.linkedin.com/in/k-sumanth-reddy",
             }
         ]
     },
@@ -151,9 +150,9 @@ export const projects = [
         duration: "Oct 2024 - Dec 2024",
         collaborators: [
             {
-               name:"Vinay Kumar Reddy",
-               github:"https://github.com/vinaykumarreddy9",
-               linkedin:"https://www.linkedin.com/in/kovvuri-vinay-kumar-reddy",
+                name: "Vinay Kumar Reddy",
+                github: "https://github.com/vinaykumarreddy9",
+                linkedin: "https://www.linkedin.com/in/kovvuri-vinay-kumar-reddy",
             }
         ]
     },

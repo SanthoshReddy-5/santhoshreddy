@@ -1,6 +1,6 @@
 import swarnandhraLogo from '../assets/swrn.png';
 import interLogo from '../assets/inter.png';
-import { MdSchool } from "react-icons/md";
+import schoolLogo from '../assets/school.png';
 
 const educationData = [
   {
@@ -14,7 +14,7 @@ const educationData = [
   {
     course: 'Intermediate (XII) - MPC',
     college: 'Andhra Association (U.K) Junior College, Penumantra',
-    year: '2020 - 2022',
+    year: 'Aug 2020 - May 2022',
     percentage: '72%',
     logo: interLogo,
     desc: "I completed my Intermediate at Andhra Association (U.K) Junior College, Penumantra where I not only focused on academics but also improved my communication skills in English and Hindi, Which helped me articulate my thoughts confidently and effectively."
@@ -22,9 +22,9 @@ const educationData = [
   {
     course: 'SSC (X)',
     college: 'R.A.Z.P High School, Penumantra',
-    year: '2020',
+    year: 'Mar 2020',
     percentage: '79%',
-    icon: <MdSchool className="text-purple-500 text-3xl" />,
+    logo: schoolLogo,
     desc: "I completed my SSC at R.A.Z.P High School, Penumantra where I not only gained academic knowledge but also learned lifelong values like discipline, ethics and friendship that shaped my early growth."
   },
 ];
@@ -48,17 +48,11 @@ const EducationDetails = () => {
 
               <div className="bg-[#1f1f2e] text-white p-5 rounded-xl shadow-md border-2 border-blue-500 w-full transition-all duration-300 ease-in-out cursor-pointer">
                 <div className="flex items-center gap-4 mb-1 flex-wrap">
-                  {edu.logo ? (
                     <img
                       src={edu.logo}
                       alt={`${edu.college} logo`}
                       className="w-12 h-12 md:w-15 md:h-15 object-contain rounded-md border border-white"
                     />
-                  ) : (
-                    <div className="w-12 h-12 md:w-15 md:h-15 flex items-center justify-center bg-[#1f1f2e] border border-white rounded-md">
-                      {edu.icon}
-                    </div>
-                  )}
                   <div>
                     <h3 className="text-lg md:text-xl mt-[2px] font-semibold">{edu.college}</h3>
                     <p className="text-gray-400">{edu.course}</p>

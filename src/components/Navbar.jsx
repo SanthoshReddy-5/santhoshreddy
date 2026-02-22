@@ -36,7 +36,6 @@ const Navbar = () => {
                     </div>
                 </div>
 
-
                 <div className="md:hidden">
                     <div onClick={toggleMenu} className="text-blue-500">
                         {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}

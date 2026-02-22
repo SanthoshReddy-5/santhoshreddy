@@ -33,7 +33,7 @@ const Experience = () => {
                   </span>
 
                   <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[85%]">
-                    {exp.description.join(" ")}
+                    {exp.description}
                   </p>
 
                   <div className="mt-3 flex flex-wrap gap-2">
