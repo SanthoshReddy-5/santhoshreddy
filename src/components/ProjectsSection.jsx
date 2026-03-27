@@ -72,13 +72,13 @@ const ProjectsSection = () => {
 
                         <div className="flex gap-2 my-4 flex-wrap">
                             {selectedProject.tags.map((tag, i) => (
-                                <span key={i} className="px-1 md:px-2 py-0.5 md:py-1 text-[10px] md:text-[18px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer">{tag}</span>
+                                <span key={i} className="px-1 md:px-2 py-0.5 md:py-1 text-[12px] md:text-[18px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500 cursor-pointer">{tag}</span>
                             ))}
                         </div>
 
-                        <h2 className="text-[18px] md:text-[25px] font-bold text-white mb-1">{selectedProject.title}</h2>
-                        <span className="text-[14px] md:text-[18px] text-gray-300 mb-4">{selectedProject.duration || ""}</span>
-                        <p className="text-[12px] md:text-[20px] text-gray-300 mb-4">{selectedProject.description}</p>
+                        <h2 className="text-[20px] md:text-[25px] font-bold text-white mb-1">{selectedProject.title}</h2>
+                        <span className="text-[15px] md:text-[18px] text-gray-300 mb-4">{selectedProject.duration || ""}</span>
+                        <p className="text-[16px] md:text-[20px] text-gray-300 mb-4">{selectedProject.description}</p>
 
                         <div className="mb-4">
                             <h3 className="font-semibold text-gray-100 mb-2 text-[16px] md:text-[22px]">Team Members</h3>
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
                                         className="w-8 md:w-12 h-8 md:h-12 rounded-full object-cover border border-blue-500"
                                     />
                                     <span className="font-medium text-[12px] md:text-[18px] mr-[20px] text-gray-200">Santhosh Reddy (Me)</span>
-                                    <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500">
+                                    <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-green-500">
                                         <FaGithub size={30} />
                                     </a>
                                     <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500">
@@ -107,7 +107,7 @@ const ProjectsSection = () => {
                                                 className="w-8 md:w-12 h-8 md:h-12 rounded-full object-cover border border-blue-500"
                                             />
                                             <span className="font-medium text-[12px] md:text-[18px] mr-[20px] text-gray-200">{col.name}</span>
-                                            <a href={col.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500 cursor-pointer">
+                                            <a href={col.github} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-green-500 cursor-pointer">
                                                 <FaGithub size={30} />
                                             </a>
                                             <a href={col.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-purple-500 cursor-pointer">

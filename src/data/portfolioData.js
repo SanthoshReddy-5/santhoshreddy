@@ -32,9 +32,11 @@ import next from "../assets/next.png";
 import typescript from "../assets/typescript.png";
 import flask from "../assets/flask.png";
 import firebase from "../assets/firebase.png";
-import bootstrap from "../assets/bootstrap.png";
 import jupyter from "../assets/jupyter.png";
 import streamlit from "../assets/streamlit.png";
+import flutter from "../assets/flutter.png";
+import pdfassistant from "../assets/pdfassistant.png";
+import jobportal from "../assets/jobportal.png";
 //import certificateImg from "../assets/certificate.png";
 
 export const personalInfo = {
@@ -66,8 +68,8 @@ export const personalInfo = {
 export const skills = [
     {
         title: "Frontend",
-        skills: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Bootstap", "React.js", "TypeScript", "Next.js"],
-        logos: [html, css, js, tailwind, bootstrap, react, typescript, next]
+        skills: ["HTML", "CSS", "JavaScript", "TailwindCSS", "React.js", "TypeScript", "Next.js", "Flutter"],
+        logos: [html, css, js, tailwind, react, typescript, next, flutter]
     },
     {
         title: "Backend",
@@ -107,10 +109,32 @@ export const experiences = [
 
 export const projects = [
     {
+        title: "Interactive PDF Assistant",
+        description: 
+            `Developed an Interactive PDF Assistant that enables users to upload documents and query them using natural language
+            with secure, offline LLM processing via Ollama. Implemented semantic search using LangChain, ChromaDB, and Sentence
+            Transformers, with multilingual support and text-to-speech for enhanced document interaction.`,
+        image: pdfassistant,
+        tags: ["Python", "Streamlit", "Ollama", "ChromaDB", "Langchain","Sentence-Transformers"],
+        sourceCode: "https://github.com/SanthoshReddy-5/interactive_pdf_assistant",
+        duration: "Jan 2026 - Feb 2026",
+        collaborators: []
+    },
+    {
+        title: "Job Portal Application",
+        description: 
+            `Built a full-stack Job Portal using Next.js, React, TypeScript, Tailwind CSS, and MySQL, enabling job posting and application workflows. Implemented secure authentication with argon2, form handling using React Hook Form & Zod, and database management with Drizzle ORM. Integrated UploadThing and TipTap for file uploads and rich text editing.`,
+        image: jobportal,
+        tags: ["React.js", "Next.js", "MySQL","TailwindCSS","TypeScript","Zod","React Hook Form"],
+        sourceCode: "https://github.com/SanthoshReddy-5/jobPortal",
+        duration: "Nov 2025 - Mar 2026",
+        collaborators: []
+    },
+    {
         title: "Utkarsh 2025 - Website",
         description: "Utkarsh 2025 is the official website for the annual tech and cultural fest of Swarnandhra College of Engineering and Technology, organized by the IT Department (IT & DS). It serves as a registration portal for the 24-hour hackathon, technical and non-technical events and online games conducted during the fest. The website features a responsive, user-friendly design that ensures a smooth and engaging experience for all participants.",
         image: utkarsh,
-        tags: ["TailwindCSS", "React.js", "TypeScript", "Shadcn", "Lovable"],
+        tags: ["TailwindCSS", "React.js", "TypeScript", "Shadcn", "Google Forms"],
         livePreview: "https://www.swarnandhra.ac.in/utkarsh2025",
         sourceCode: "https://github.com/sumanthreddy217/Utkarsh2k25",
         duration: "Aug 2025",
@@ -135,7 +159,7 @@ export const projects = [
         title: "Expense Tracker",
         description: "TrackPocket is a modern expense tracker built with the MERN stack and Tailwind CSS, designed to help users manage their finances easily. It provides secure JWT-based authentication, allowing users to safely log in and track their expenses and income. With features like categorization, real-time updates, and a clean responsive UI, users can get a clear overview of their spending habits. TrackPocket makes budgeting simple, accessible, and efficient for everyone.",
         image: trackpocket,
-        tags: ["React.js", "TailwindCSS", "MongoDB", "Node.js", "Express.js", "Vercel"],
+        tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCSS"],
         sourceCode: "https://github.com/SanthoshReddy-5/Expense_Tracker",
         livePreview: "https://trackpocket.vercel.app",
         duration: "May 2025 - Jun 2025",
