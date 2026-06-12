@@ -37,7 +37,8 @@ import streamlit from "../assets/streamlit.png";
 import flutter from "../assets/flutter.png";
 import pdfassistant from "../assets/pdfassistant.png";
 import jobportal from "../assets/jobportal.png";
-//import certificateImg from "../assets/certificate.png";
+import datavalley from "../assets/datavalley.jpeg";
+import resume from "../assets/resume.pdf";
 
 export const personalInfo = {
     name: "Santhosh Reddy",
@@ -53,7 +54,7 @@ export const personalInfo = {
         "Data Scientist", 1000,
         "Programmer", 1000
     ],
-    resume: "https://drive.google.com/file/d/16M_Nwyxc8BqlBxsLIid65w8DV1W9IinM/view?usp=drivesdk",
+    resume: resume,
     location: "Aravalli, Andhra Pradesh",
     email: "example@gmail.com",
     phone: "+91 xxxxx xxxxx",
@@ -90,9 +91,23 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Python Full Stack Development",
+        organization:
+            "Datavalley India Pvt. Ltd.",
+        duration: "Dec 2025 - Apr 2026",
+        description: 
+            `Gained hands-on experience in developing full-stack web applications using Django,
+             Flask, and MySQL, and deploying them on AWS cloud. Strengthened expertise
+              in backend development, API integration, database management, and modern web 
+              development practices while building scalable and efficient web solutions.`,
+        skills: ["Python Programming", "REST API","Flask", "Django", "Flask", "MySQL",
+             "Amazon Web Services", "System Design"],
+        certificate: datavalley,
+    },
+    {
         title: "Internship in Artificial Intelligence",
         organization:
-            "ARTIFICIAL INTELLIGENCE MEDICAL AND ENGINEERING RESEARCHERS SOCIETY (AIMERS)",
+            "Artificial Intelligence Medical and Engineering Researchers Society (AIMERS)",
         duration: "May 2024 - Jul 2024",
         description: 
             `Built a Telegram chatbot integrating OpenWeatherMap API for real-time weather updates,
@@ -103,8 +118,8 @@ export const experiences = [
             decision-making and improving organizational performance.`,
         skills: ["NLP", "Artificial Intelligence","Object Detection", "Machine Learning", "Power BI", "Hugging Face",
              "Large Language Models", "YOLOv8"],
-    certificate: "",
-    },
+        certificate: "",
+    }
 ];
 
 export const projects = [

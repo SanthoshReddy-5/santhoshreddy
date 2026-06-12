@@ -6,10 +6,10 @@ const educationData = [
   {
     course: 'Bachelor of Technology in Computer Science and Engineering (Data Science)',
     college: 'Swarnandhra College of Engineering and Technology, Narsapur',
-    year: 'Sep 2022 - Present',
-    cgpa: '8.35 / 10.0',
+    year: 'Sep 2022 - Apr 2026',
+    cgpa: '8.43 / 10.0',
     logo: swarnandhraLogo,
-    desc: "I am currently pursuing B.Tech Final Year in SCET, gained a strong foundation in the core concepts of Computer Science and Engineering, specializied in Data Science, resulting in an impressive CGPA of 8.35. I explored the depths of Artificial Intelligence and Machine Learning, working on hands-on projects that enhanced my problem solving and analytical abilities."
+    desc: "I recently completed my B.Tech from SCET with an impressive CGPA of 8.43. During my academics, I gained a strong foundation in Python programming, Artificial Intelligence and Machine Learning, while developing a growing interest in Full Stack Web Development using the MERN Stack. I also worked on hands-on projects that enhanced my problem-solving and analytical abilities."
   },
   {
     course: 'Intermediate (XII) - MPC',
@@ -34,7 +34,7 @@ const EducationDetails = () => {
     <div id="education" className="w-full bg-gradient-to-br from-purple-100 via-white to-cyan-100 py-10">
       <div className="max-w-[1280px] mx-auto px-4">
         <h2 className="text-[30px] md:text-[40px] font-semibold text-center text-purple-500">
-          Educational
+          Education
         </h2>
 
         <div className="text-center text-[16px] md:text-[20px] mt-[10px] mb-[20px] px-[5px] md:w-2/3 mx-auto text-gray-800">

@@ -32,7 +32,7 @@ const Experience = () => {
                     {exp.duration}
                   </span>
 
-                  <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[85%]">
+                  <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[80%]">
                     {exp.description}
                   </p>
 
@@ -48,7 +48,7 @@ const Experience = () => {
                 </div>
 
                 {exp.certificate && (
-                  <div className="md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10 md:absolute md:top-[15%] md:right-[5%] flex-shrink-0">
+                  <div className="md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10 md:absolute md:top-[12%] md:right-[3%] flex-shrink-0">
                     <a
                       href={exp.certificate}
                       target="_blank"
@@ -57,7 +57,7 @@ const Experience = () => {
                       <img
                         src={exp.certificate}
                         alt={`${exp.title} Certificate`}
-                        className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover border-2 border-blue-500 shadow-md cursor-pointer"
+                        className="w-40 h-40 md:w-50 md:h-50 rounded-2xl object-center border-2 border-blue-500 shadow-md cursor-pointer"
                       />
                     </a>
                   </div>
