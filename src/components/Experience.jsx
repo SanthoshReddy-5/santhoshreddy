@@ -32,7 +32,7 @@ const Experience = () => {
                     {exp.duration}
                   </span>
 
-                  <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[80%]">
+                  <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed md:w-[90%]">
                     {exp.description}
                   </p>
 

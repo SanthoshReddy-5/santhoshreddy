@@ -1,4 +1,4 @@
-import developerImage from "../assets/developerImage.jpg";
+import developerImage from "../assets/developerImage.jpeg";
 import password from "../assets/password.png";
 import weather from "../assets/weather.png";
 import potato from "../assets/potato.png";
@@ -37,8 +37,6 @@ import streamlit from "../assets/streamlit.png";
 import flutter from "../assets/flutter.png";
 import pdfassistant from "../assets/pdfassistant.png";
 import jobportal from "../assets/jobportal.png";
-import datavalley from "../assets/datavalley.jpeg";
-import resume from "../assets/resume.pdf";
 
 export const personalInfo = {
     name: "Santhosh Reddy",
@@ -54,9 +52,9 @@ export const personalInfo = {
         "Data Scientist", 1000,
         "Programmer", 1000
     ],
-    resume: resume,
+    resume: "",
     location: "Aravalli, Andhra Pradesh",
-    email: "example@gmail.com",
+    email: "santhoshreddyv01@gmail.com",
     phone: "+91 xxxxx xxxxx",
     socials: {
         github: "https://github.com/SanthoshReddy-5",
@@ -102,7 +100,7 @@ export const experiences = [
               development practices while building scalable and efficient web solutions.`,
         skills: ["Python Programming", "REST API","Flask", "Django", "Flask", "MySQL",
              "Amazon Web Services", "System Design"],
-        certificate: datavalley,
+        certificate: "",
     },
     {
         title: "Internship in Artificial Intelligence",

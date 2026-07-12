@@ -32,7 +32,7 @@ const Contact = () => {
 
     setIsSending(true); // Disable button while sending
 
-    emailjs.sendForm('service_3e1o6u8', 'template_ibphbo1', form.current, 'lsoWLtyTjCh7OWUkq')
+    emailjs.sendForm('service_acnqcsi', 'template_vsksuf2', form.current, '3Y52njgX3gwE9EDqt')
       .then(() => {
         toast.success("Email sent successfully!");
         form.current.reset();
