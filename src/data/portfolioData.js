@@ -52,7 +52,7 @@ export const personalInfo = {
         "Data Scientist", 1000,
         "Programmer", 1000
     ],
-    resume: "",
+    resume: "https://drive.google.com/file/d/1MRJDq98ozBuuJ7Mq7RUOY6d0nbtkx3Kc/view?usp=drivesdk",
     location: "Aravalli, Andhra Pradesh",
     email: "santhoshreddyv01@gmail.com",
     phone: "+91 xxxxx xxxxx",
