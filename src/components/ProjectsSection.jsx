@@ -38,7 +38,7 @@ const ProjectsSection = () => {
                                 className="rounded-[5px] w-full object-cover"
                             />
                             <div className="flex flex-wrap gap-2 my-3">
-                                {project.tags.map((tag, i) => (
+                                {project.tags.slice(0, 5).map((tag, i) => (
                                     <span key={i} className="px-2 py-1 text-[12px] md:text-[14px] rounded-[5px] bg-blue-500/10 hover:bg-blue-500/20 text-gray-300 font-medium hover:text-gray-50 border border-blue-500">
                                         {tag}
                                     </span>

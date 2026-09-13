@@ -6,10 +6,9 @@ import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
 import EducationDetails from './components/EducationDetails';
 import Experience from './components/Experience';
-
+import Chatbot from './components/Chatbot';
 
 function App() {
-
   return (
     <div className='custom-scroll'>
       <Navbar/>
@@ -20,6 +19,7 @@ function App() {
       <EducationDetails/>
       <Contact/>
       <Footer/>
+      <Chatbot />
     </div>
   )
 }
